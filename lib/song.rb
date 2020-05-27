@@ -26,7 +26,7 @@ class Song
   end
   
   def self.genre_count
-    songs_per_genre ={}
+    songs_per_genre 
     @@genres.each 
     songs_per_genre 
   end
