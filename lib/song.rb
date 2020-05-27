@@ -25,25 +25,13 @@ class Song
     @@artists.uniq!
   end
   
-  #def self.genre_count
-    #genre_count = {}
-    #@@genres.each do |genre|
-      #if genre_count[genre] = genre_count[genre] then 
-      #genre_count[genre] +=1 
-      #else 
-      #  genre_count[genre]= genre_count[genre]
-     # end
-    #end
-   # genre_count
-  #end
-  
   def self.genre_count
     genre_count = {}
     @@genres.each do |genre|
       if genre_count[genre] then 
-       	 ## initialize it as 1
+       	genre_count = genre_count[genre]
       else 
-         ## increment it
+        genre_count
       end
     end
     genre_count
